@@ -4,12 +4,12 @@ return {
 	opts = function()
 		local dashboard = require("alpha.themes.dashboard")
 		dashboard.section.buttons.val = {
-			dashboard.button("SPC s r", "勒" .. " Restore Session", [[:lua require("persistence").load() <cr>]]),
-			dashboard.button("SPC f f", " " .. " Find file", ":Telescope find_files <CR>"),
-			dashboard.button("SPC f r", " " .. " Recent files", ":Telescope oldfiles <CR>"),
-			dashboard.button("SPC f n", " " .. " New file", ":ene <BAR> startinsert <CR>"),
-			dashboard.button("SPC f c", " " .. " Config", ":e $MYVIMRC <CR>"),
-			dashboard.button("SPC q q", " " .. " Quit", ":qa<CR>"),
+			dashboard.button("SPC s r", "🔄 " .. " Restore Session", [[:lua require("persistence").load() <cr>]]),
+			dashboard.button("SPC f f", "🔍 " .. " Find file", ":Telescope find_files <CR>"),
+			dashboard.button("SPC f r", "📂 " .. " Recent files", ":Telescope oldfiles <CR>"),
+			dashboard.button("SPC f n", "📄 " .. " New file", ":ene <BAR> startinsert <CR>"),
+			dashboard.button("SPC f c", "⚙️  " .. " Config", ":e $MYVIMRC <CR>"),
+			dashboard.button("SPC q q", "👋 " .. " Quit", ":qa<CR>"),
 		}
 		for _, button in ipairs(dashboard.section.buttons.val) do
 			button.opts.hl = "AlphaButtons"
@@ -21,7 +21,7 @@ return {
 		dashboard.opts.layout[1].val = 8
 
 		dashboard.section.header.val = {
-			[[K E V I M]],
+			[[🇰🇪🇻🇮🇲]],
 
 		}
 
