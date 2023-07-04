@@ -24,7 +24,7 @@
 -- vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize -2<CR>")
 
 -- eazy appen a comment
--- vim.keymap.set("n", "gca", "<cmd>normal gcA<CR> a")
+vim.keymap.set("n", "gca", "<cmd>normal gcA<CR> a")
 
 -- Cycle buffer
 vim.keymap.set("n", "<Tab>", "<cmd>bn<CR>", { silent = true })
