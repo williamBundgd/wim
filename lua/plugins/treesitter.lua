@@ -30,7 +30,7 @@ return {
 			"typescript",
 			"vim",
 			"yaml",
-			"rust",
+			-- "rust",
 			"c",
 			"cpp",
 		},
