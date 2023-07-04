@@ -154,10 +154,10 @@ return {
 		keys = { { "<leader>cm", "<cmd>Mason<cr>", desc = "Mason" } },
 		opts = {
 			ensure_installed = {
-				"stylua",
-				"shellcheck",
-				"shfmt",
-				"flake8",
+				-- "stylua",
+				-- "shellcheck",
+				-- "shfmt",
+				-- "flake8",
 			},
 		},
 		---@param opts MasonSettings | {ensure_installed: string[]}

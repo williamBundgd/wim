@@ -8,7 +8,7 @@ return {
 		{ "<bs>", desc = "Schrink selection", mode = "x" },
 	},
 	dependencies = {
-		"HiPhish/nvim-ts-rainbow2",
+		-- "HiPhish/nvim-ts-rainbow2",
 	},
 	opts = {
 		highlight = { enable = true },
@@ -16,7 +16,7 @@ return {
 		context_commentstring = { enable = true, enable_autocmd = false },
 		ensure_installed = {
 			"bash",
-			"help",
+			-- "help",
 			"html",
 			"javascript",
 			"json",
@@ -52,6 +52,7 @@ return {
 		-- },
 	},
 	config = function(_, opts)
+                require("nvim-treesitter.install").prefer_git = true
 		require("nvim-treesitter.configs").setup(opts)
 	end,
 }
