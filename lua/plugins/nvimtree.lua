@@ -4,6 +4,7 @@ return {
 	cmd = { "NvimTreeToggle" },
 	keys = {
 		{ "<leader>oe", "<cmd>NvimTreeToggle<cr>", desc = "Explorer NvimTree" },
+		{ "<leader>e", "<cmd>NvimTreeToggle<cr>", desc = "Explorer NvimTree" },
 	},
 	config = function()
 		require("nvim-tree").setup({

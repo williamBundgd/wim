@@ -5,12 +5,12 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 	},
-	config = function () 
+	config = function()
 		require("obsidian").setup({
 			dir = "~/Documents/Obsidian",
 			completion = {
-				nvim_cmp = true
+				nvim_cmp = true,
 			},
-		})	
-	end
+		})
+	end,
 }
