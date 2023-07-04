@@ -21,7 +21,8 @@ return {
 		dashboard.opts.layout[1].val = 8
 
 		dashboard.section.header.val = {
-			[[n e o v i m]],
+			[[K E V I M]],
+
 		}
 
 		return dashboard
