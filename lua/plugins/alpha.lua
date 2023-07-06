@@ -5,11 +5,11 @@ return {
 		local dashboard = require("alpha.themes.dashboard")
 		dashboard.section.buttons.val = {
 			dashboard.button("SPC s r", "🔄 " .. " Restore Session", [[:lua require("persistence").load() <cr>]]),
-			dashboard.button("SPC e", "🌲 " .. " Serch tree", ":NvimTreeToggle <CR>"),
+			dashboard.button("SPC e", "🌲 " .. " Toggle nvimtree", ":NvimTreeToggle <CR>"),
 			dashboard.button("SPC f f", "🔍 " .. " Find file", ":Telescope find_files <CR>"),
 			dashboard.button("SPC f r", "📂 " .. " Recent files", ":Telescope oldfiles <CR>"),
 			dashboard.button("SPC f n", "📄 " .. " New file", ":ene <BAR> startinsert <CR>"),
-			dashboard.button("SPC f c", "⚙️  " .. " Config", ":e $MYVIMRC <CR>"),
+			dashboard.button("c", "⚙️  " .. " Config", ":e $MYVIMRC <CR>"),
 			dashboard.button("q", "👋 " .. " Quit", ":qa<CR>"),
 		}
 		for _, button in ipairs(dashboard.section.buttons.val) do
