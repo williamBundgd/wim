@@ -30,6 +30,10 @@ vim.keymap.set("n", "gca", "<cmd>normal gcA<CR> a")
 vim.keymap.set("n", "<Tab>", "<cmd>bn<CR>", { silent = true })
 vim.keymap.set("n", "<S-Tab>", "<cmd>bp<CR>", { silent = true })
 
+-- Save on ctrl s
+vim.keymap.set("n", "<C-s>", "<cmd>w<CR>", { silent = true })
+vim.keymap.set("i", "<C-s>", "<cmd>w<CR>", { silent = true })
+
 -----------------
 -- Insert Mode --
 -----------------
