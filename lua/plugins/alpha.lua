@@ -82,7 +82,10 @@ return {
 
                 local myNames = { name1, name2, name3, name4, name5 }
 
-                dashboard.section.header.val = myNames[(math.floor(os.clock() * 100000) % #myNames) + 1]
+                math.randomseed(os.time())
+                math.random()
+                math.random()
+                dashboard.section.header.val = myNames[math.random(#myNames)]
 
                 return dashboard
         end,
