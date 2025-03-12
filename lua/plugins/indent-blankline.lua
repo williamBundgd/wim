@@ -1,12 +1,7 @@
 -- Indent guides for Neovim
 return  {
-	"lukas-reineke/indent-blankline.nvim",
+        "lukas-reineke/indent-blankline.nvim",
+        main = "ibl",
 	event = { "BufReadPost", "BufNewFile" },
-	opts = {
-		-- char = "▏",
-		char = "│",
-		filetype_exclude = { "help", "alpha", "dashboard", "nvimtree", "Trouble", "lazy" },
-		show_trailing_blankline_indent = false,
-		show_current_context = false,
-	},
+	opts = {},
 }

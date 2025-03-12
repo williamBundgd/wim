@@ -58,7 +58,9 @@ function M.on_attach(client, buffer)
 			opts.has = nil
 			opts.silent = true
 			opts.buffer = buffer
-			vim.keymap.set(keys.mode or "n", keys[1], keys[2], opts)
+                        if not (keys[1] == nil) then
+                                vim.keymap.set(keys.mode or "n", keys[1], keys[2], opts)
+                        end
 		end
 	end
 end
