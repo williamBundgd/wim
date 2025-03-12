@@ -37,6 +37,9 @@ vim.keymap.set("n", "<C-z>", "<cmd>z<CR>", { silent = true })
 vim.keymap.set("n", "<Z>", "<cmd>z<CR>", { silent = true })
 vim.keymap.set("i", "<C-z>", "<cmd>z<CR>", { silent = true })
 
+vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
+
 -----------------
 -- Insert Mode --
 -----------------
